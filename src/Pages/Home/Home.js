@@ -87,6 +87,27 @@ const Home = ({ name, setName, fetchQuestions }) => {
 
             </div>
             <img src='/quiz.svg' className='banner' alt='quiz img' />
+            <div className='box'>
+            <Button
+                variant="contained"
+                color="secondary"
+                size="large"
+                style={{ alignSelf: "center", marginTop: 20 }}
+                href="/news"
+            >
+                News
+            </Button>
+                &nbsp;&nbsp;&nbsp;
+                <Button
+                variant="contained"
+                color="secondary"
+                size="large"
+                style={{ alignSelf: "center", marginTop: 20 }}
+                href="/covid"
+            >
+                COVID-19
+            </Button>
+            </div>
         </div>
     );
 };

@@ -8,6 +8,8 @@ import Header from './components/Header/Header';
 import Home from "./Pages/Home/Home";
 import Quiz from "./Pages/Quiz/Quiz";
 import Result from "./Pages/Result/Result";
+import News from "./Pages/News/News";
+import Covid from "./Pages/Covid/Covid"
 import axios from "axios";
 
 function App() {
@@ -24,16 +26,14 @@ function App() {
     );
 
     setQuestions(data.results);
+    console.log(user);
   };
 
   return (
     <BrowserRouter>
       <div className="App" style={{ backgroundImage: 'url("/bgimg.jpg")' }}>
-
       <Header />
-      
       <Switch>
-
         <Route path="/" exact>
           <Login setLoginUser={setLoginUser} />
         </Route>
@@ -65,13 +65,18 @@ function App() {
             name={name} score={score}
           />
         </Route>
+
+        <Route path='/news' exact>
+          <News></News>
+        </Route>
+
+        <Route path='/covid' exact>
+          <Covid></Covid>
+        </Route>
   
       </Switch>
-
       </div>
-
       <Footer />
-
     </BrowserRouter>
     
   );
