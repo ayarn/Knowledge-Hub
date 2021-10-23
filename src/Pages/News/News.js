@@ -24,10 +24,20 @@ useEffect(() => {
             color="secondary"
             size="large"
             style={{ alignSelf: "center", marginTop: 20 }}
-            href="/"
+            href="/Home"
             >
                 homepage 
             </Button> 
+            &nbsp;&nbsp;&nbsp;
+            <Button
+                variant="contained"
+                color="secondary"
+                size="large"
+                style={{ alignSelf: "center", marginTop: 20 }}
+                href="/"
+            >
+                logout
+            </Button>
             <br /> 
             {articles.map(({ title, description, url, urlToImage}) => (
                 <Newsitem 

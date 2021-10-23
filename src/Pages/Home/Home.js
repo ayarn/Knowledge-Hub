@@ -28,7 +28,7 @@ const Home = ({ name, setName, fetchQuestions }) => {
         <div className='content'>
 
             <div className='settings'>
-                <span style={{fontSize: 30}}>Quiz Settings</span>
+                <span style={{fontSize: 30}}>Test Your Knowledge</span>
             </div>
 
             <div className="settings__select">
@@ -86,7 +86,7 @@ const Home = ({ name, setName, fetchQuestions }) => {
                 </Button>
 
             </div>
-            <img src='/quiz.svg' className='banner' alt='quiz img' />
+            <img src='/home1.svg' className='banner' alt='quiz img' />
             <div className='box'>
             <Button
                 variant="contained"
@@ -98,7 +98,7 @@ const Home = ({ name, setName, fetchQuestions }) => {
                 News
             </Button>
                 &nbsp;&nbsp;&nbsp;
-                <Button
+            <Button
                 variant="contained"
                 color="secondary"
                 size="large"
@@ -107,6 +107,18 @@ const Home = ({ name, setName, fetchQuestions }) => {
             >
                 COVID-19
             </Button>
+            &nbsp;&nbsp;&nbsp;
+            <Button
+                variant="contained"
+                color="secondary"
+                size="large"
+                style={{ alignSelf: "center", marginTop: 20 }}
+                href="/"
+            >
+                logout
+            </Button>
+
+            
             </div>
         </div>
     );

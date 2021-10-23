@@ -43,10 +43,20 @@ const Covid = () => {
             color="secondary"
             size="large"
             style={{ alignSelf: "center", marginTop: 20 }}
-            href="/"
+            href="/Home"
             >
                 homepage 
-            </Button><br/>
+            </Button>
+            &nbsp;&nbsp;&nbsp;
+            <Button
+                variant="contained"
+                color="secondary"
+                size="large"
+                style={{ alignSelf: "center", marginTop: 20 }}
+                href="/"
+            >
+                logout
+            </Button>
 
             <div className='box' style={{border: '2px solid', padding:"10px", backgroundColor: "red", width: "500px"}}>
             <div style={{border: '1px dashed'}}>

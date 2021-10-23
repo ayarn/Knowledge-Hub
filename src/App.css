@@ -1,11 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
 
+body
+{
+    height: 98vh;
+    background: linear-gradient(135deg, hsla(324, 54%, 43%, 0.95), hsla(35, 84%, 45%, 0.93)) fixed,
+              center center no-repeat;
+    background-size: cover;
+}
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scrollbar-width: thin; /* Firefox */
+  scrollbar-width: thin; 
 }
 
 *::-webkit-scrollbar {
@@ -18,10 +27,11 @@ a {
   color: inherit;
 }
 
-.app {
+.App {
   min-height: 98.5vh;
-  border: 8px solid #39445a93;
-  /* background-color: white; */
+  border: 5px solid black;
+  background-image: url('./1-2.jpg');
+  background: no-repeat;
   margin: 5px;
   padding: 5px;
 }
@@ -29,3 +39,4 @@ a {
 .mainImg {
   padding: 10px 0 5px 0;
 }
+

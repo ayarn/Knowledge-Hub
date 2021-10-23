@@ -31,7 +31,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className="App" style={{ backgroundImage: 'url("/bgimg.jpg")' }}>
+      <div className="App" >
       <Header />
       <Switch>
         <Route path="/" exact>

@@ -1,4 +1,4 @@
-import { CircularProgress } from "@material-ui/core";
+import { Button, CircularProgress } from "@material-ui/core";
 import { useEffect, useState } from "react";
 import Question from "../../components/Question/Question";
 import "./Quiz.css";
@@ -27,6 +27,16 @@ const Quiz = ({ name, questions, score, setScore, setQuestions }) => {
     return (
         <div className="quiz">
         <span className="subtitle">Welcome, {name}</span>
+        &nbsp;&nbsp;&nbsp;
+            <Button
+                variant="contained"
+                color="secondary"
+                size="large"
+                style={{ alignSelf: "center", marginTop: 20 }}
+                href="/"
+            >
+                logout
+            </Button>
   
         {questions ? (
           <>
